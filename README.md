@@ -37,3 +37,8 @@ The teacher must have access to this GitHub repository.
 In addition, you are welcome to hand over other files that you find relevant, e.g. PowerPoint, Charts, etc. to the teacher.
 
 REMEMBER: Git small, Git often - Git commit messages are part of your drop-off.
+
+
+### Credits
+Jesse - Yellow (GUL) house
+Cassandra - TBA
