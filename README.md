@@ -29,7 +29,7 @@ Before coding begins, a representative from Alice & Bob Houses must approve a mo
 ### Delivery
 - A fully functional website that meets all requirements in the specifications written by the teacher Rasmus.
 
-## Presentation
+### Presentation
 The presentation takes place in front of the class.
 The presentation should be between 10-15 minutes.
 Please make a speech paper and possibly Powerpoint.
@@ -43,15 +43,11 @@ Those who will be listening to the presentation are welcome to write down questi
     Product demonstration (Show the product you have made)
     How did you solve the task? Display parts of your code. (For example, show some code you think turned out well.)
     Were there challenges (which and how solved in them)?
-
-    610
     
 ### Group
-There must be 2 to 3 people per group.
-
-You have to work using Git
-
-The group must submit their final project.
+- There must be 2 to 3 people per group.
+- You have to work using Git
+- The group must submit their final project.
 
 ### Submission
 You have to hand in the files.
@@ -65,6 +61,5 @@ REMEMBER: Git small, Git often - Git commit messages are part of your drop-off.
 
 
 ### Credits
-Jesse - Yellow (GUL) house
-
-Cassandra - Green house
+- Jesse - Yellow (GUL) house
+- Cassandra - Green house
