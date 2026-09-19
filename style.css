@@ -11,9 +11,35 @@
 :root {
     font-family: "JetBrains Sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #000000;
+    color: #f8f8f2;
+    background-color: #282a36;
     text-align: center;
+}
+
+::selection {
+    background: #ff79c6;
+    color: #282a36;
+}
+
+/* Link Styling */
+a {
+    color: #50fa7b;
+}
+
+a:link {
+    color: #bd93f9;
+}
+
+a:visited {
+    color: #6272a4;
+}
+
+a:hover {
+    color: #ff79c6;
+}
+
+a:active {
+    color: #50fa7b;
 }
 
 body {
@@ -28,12 +54,15 @@ body {
     background-image: url("background.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: #282a36;
+    color: #f8f8f2;
 }
 
 h1 {
     font-size: 29px;
     line-height: 39px;
     font-weight: 300;
+    color: #bd93f9;
 }
 
 .title {
@@ -62,7 +91,7 @@ img {
     flex-direction: row;
     justify-content: center;
     padding: 60px;
-    color: rgba(255, 255, 255, 1);
+    color: #f8f8f2;
 }
 
 .counter-interaction {
@@ -78,7 +107,7 @@ img {
     width: 48%;
     height: 47%;
     align-content: space-between;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #6272a4;
     border-radius: 120px;
     font-size: 68px;
     text-align: center;
@@ -89,17 +118,18 @@ img {
 }
 
 .counter-interaction button:disabled {
-    color: rgba(255, 255, 255, 0.5);
+    color: #6272a4;
     background-image: none;
-    border-color: inherit;
+    border-color: #44475a;
+    cursor: not-allowed;
 }
 
 .counter-info {
     width: 360px;
     height: 345px;
     margin-right: 27px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(25, 25, 28, 0.5);
+    border: 1px solid #6272a4;
+    background-color: #44475a;
     border-radius: 29px;
 }
 
@@ -109,7 +139,7 @@ img {
     font-size: 24px;
     margin-top: 60px;
     margin-bottom: 28px;
-
+    color: #8be9fd;
 }
 
 .counter-value {
@@ -118,24 +148,26 @@ img {
     margin: 0;
     padding: 0;
     line-height: 1;
+    color: #50fa7b;
 }
 
 button {
     font-family: "JetBrains Mono", Inter, system-ui, sans-serif;
-    background-color: rgba(25, 25, 28, 0.5);
+    background-color: #44475a;
     cursor: pointer;
-    color: rgba(255, 255, 255, 1);
+    color: #f8f8f2;
 }
 
 button:hover {
     background-image: radial-gradient(
             farthest-corner at 77% 83%,
-            rgba(1, 197, 245, 0.5) 2%,
-            rgba(1, 126, 254, 0.5) 28%,
-            rgba(25, 25, 28, 0) 70%
+            rgba(255, 121, 198, 0.4) 2%,
+            rgba(189, 147, 249, 0.4) 28%,
+            rgba(68, 71, 90, 0) 70%
     );
-    border: 1px solid rgba(76, 166, 255, 0.2);
+    border: 1px solid #bd93f9;
     background-clip: padding-box;
+    color: #50fa7b;
 }
 
 .technologies {
@@ -146,7 +178,6 @@ button:hover {
 .technologies img {
     max-width: fit-content;
 }
-
 
 @media (max-width: 875px) {
 
@@ -184,165 +215,4 @@ button:hover {
         margin-right: 0;
         margin-bottom: 15px;
     }
-
-    /*TODO Dracula inspired theme, delete later*/
-    a {
-        color: #50fa7b; /* All links colored green */
-    }
-
-    .wrapper, .links a {
-        color: #bd93f9;
-    }
-
-    /* Link States */
-    a:link { /* Unvisited links */
-        color: #6272a4;
-    }
-    a:visited {
-        color: #44475a;
-    }
-    a:hover {
-        color: #50fa7b;
-    }
-    a:active {
-        color: #bd93f9;
-    }
-
-    /* Centralized Global Body Configuration */
-    body {
-        /* Fixed path with root slash to pull safely from your main folder zone */
-        cursor: auto;
-        color: #6272a4;
-        font-family: Verdana, sans-serif;
-        text-align: center; /* aligns text to center. key point to keep in mind since you don't wanna try to do that in html*/
-
-        /* Central column structure alignment blueprints */
-        width: 600px;     /* Make the body 600 pixels wide */
-        margin: 0 auto;
-        /* margin: top/bottom auto (auto centers it) */
-        /* This centers the whole page horizontally */
-        padding: 0 20px 20px 20px;
-        /* padding: top right bottom left */
-        /* Top: 0, Right: 20px, Bottom: 20px, Left: 20px */
-        /* Adds space inside the edges */
-
-
-        background-color: #282a36;
-
-        /* Forces background tracking trail coverage over the whole view monitor */
-        min-height: 100vh;
-        /* vh = viewport height. 100vh = full screen height */
-        /* Makes page at least as tall as your screen */
-    }
-
-    /* Centralized Headings */
-    h1 {
-        font-size: 60px;
-        text-align: center;
-        margin: 0;
-        padding: 30px 0;
-    }
-
-    /* Paragraphs */
-    p {
-        margin: 15px 0;
-    }
-
-    /* Lists */
-    ul, ol {
-        margin: 15px 0;
-        padding-left: 20px;
-    }
-
-    /* Images */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Highlight Text Color selection */
-    ::selection {
-        background: #ff79c6;
-    }
-
-    /* Old Dracula inspired styling below, delete soon!*/
-    a {
-        color: #50fa7b; /* All links colored green */
-    }
-
-    .wrapper, .links a {
-        color: #bd93f9;
-    }
-
-    /* Link States */
-    a:link { /* Unvisited links */
-        color: #6272a4;
-    }
-    a:visited {
-        color: #44475a;
-    }
-    a:hover {
-        color: #50fa7b;
-    }
-    a:active {
-        color: #bd93f9;
-    }
-
-    /* Centralized Global Body Configuration */
-    body {
-        /* Fixed path with root slash to pull safely from your main folder zone */
-        cursor: auto;
-        color: #6272a4;
-        font-family: Verdana, sans-serif;
-        text-align: center; /* aligns text to center. key point to keep in mind since you don't wanna try to do that in html*/
-
-        /* Central column structure alignment blueprints */
-        width: 600px;     /* Make the body 600 pixels wide */
-        margin: 0 auto;
-        /* margin: top/bottom auto (auto centers it) */
-        /* This centers the whole page horizontally */
-        padding: 0 20px 20px 20px;
-        /* padding: top right bottom left */
-        /* Top: 0, Right: 20px, Bottom: 20px, Left: 20px */
-        /* Adds space inside the edges */
-
-
-        background-color: #282a36;
-
-        /* Forces background tracking trail coverage over the whole view monitor */
-        min-height: 100vh;
-        /* vh = viewport height. 100vh = full screen height */
-        /* Makes page at least as tall as your screen */
-    }
-
-    /* Centralized Headings */
-    h1 {
-        font-size: 60px;
-        text-align: center;
-        margin: 0;
-        padding: 30px 0;
-    }
-
-    /* Paragraphs */
-    p {
-        margin: 15px 0;
-    }
-
-    /* Lists */
-    ul, ol {
-        margin: 15px 0;
-        padding-left: 20px;
-    }
-
-    /* Images */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Highlight Text Color selection */
-    ::selection {
-        background: #ff79c6;
-    }
-
 }
