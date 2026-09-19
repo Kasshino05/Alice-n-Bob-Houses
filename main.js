@@ -44,6 +44,7 @@ const properties = {
       'A cozy yellow family home featuring a large garden, modern kitchen, and energy-efficient solar panels.',
     size: '145 m²',
     price: '$350,000',
+    mapBbox: '11.3300,55.3900,11.3700,55.4100'
   },
   'green-house': {
     title: 'Green Eco Cottage',
@@ -52,6 +53,7 @@ const properties = {
       'A peaceful green estate surrounded by nature. Features 4 bedrooms, timber finishes, and proximity to local schools.',
     size: '180 m²',
     price: '$420,000',
+    mapBbox: '12.5500,55.6700,12.5900,55.6900'
   },
 };
 
@@ -64,6 +66,12 @@ window.openModal = function (propertyKey) {
   document.getElementById('modal-address').innerText =
     property.address + ' • ' + property.size + ' • ' + property.price;
   document.getElementById('modal-description').innerText = property.description;
+
+  // Update map source inside the modal
+  const mapElement = document.getElementById('modal-map');
+  if (mapElement && property.mapBbox) {
+    mapElement.src = `https://www.openstreetmap.org/export/embed.html?bbox=${property.mapBbox}&layer=mapnik`;
+  }
 
   document.getElementById('details-modal').style.display = 'flex';
 };

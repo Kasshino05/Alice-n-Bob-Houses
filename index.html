@@ -78,21 +78,6 @@
 
 </section>
 
-<!-- Map Embed (Always visible on the main page) -->
-<section class="map-container" style="max-width: 800px; margin: 30px auto; padding: 0 15px;">
-  <h3>Location Map</h3>
-  <iframe
-          id="main-map"
-          width="100%"
-          height="300"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=11.3,55.3,11.4,55.4&layer=mapnik">
-  </iframe>
-</section>
-
 </main>
 
 <!-- DETAILED VIEW MODAL -->
@@ -105,6 +90,21 @@
 
     <div id="modal-body">
       <p id="modal-description">Detailed description of the property will appear here...</p>
+
+      <!-- Map Embed (Now inside detailed view modal) -->
+      <div class="map-container">
+        <h3>Location Map</h3>
+        <iframe
+                id="modal-map"
+                width="100%"
+                height="250"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=11.3,55.3,11.4,55.4&layer=mapnik">
+        </iframe>
+      </div>
 
       <!-- VIEWING REQUEST FORM -->
       <section class="booking-form">
@@ -135,6 +135,6 @@
 <!-- Javascript code
 <script type="module" src="/src/main.js"></script>
 -->
-<script src="script.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
