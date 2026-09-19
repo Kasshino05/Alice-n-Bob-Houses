@@ -181,6 +181,159 @@ button:hover {
     max-width: fit-content;
 }
 
+/* ==========================================
+   PROPERTY LISTINGS & MODAL STYLES
+   ========================================== */
+
+/* Property Cards Container */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.property-card {
+    background-color: #44475a;
+    border: 1px solid #6272a4;
+    border-radius: 12px;
+    width: 280px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    border-color: #50fa7b;
+}
+
+.property-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.property-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.property-info h3 {
+    margin: 0 0 10px 0;
+    color: #8be9fd;
+    font-size: 18px;
+}
+
+.property-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Property Modal Overlay */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 42, 54, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #282a36;
+    border: 1px solid #bd93f9;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+    color: #ff79c6;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #ff5555;
+}
+
+/* Embedded Map Styling */
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #6272a4;
+}
+
+/* Booking & Contact Form */
+.booking-form {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #6272a4;
+}
+
+.booking-form h4 {
+    color: #bd93f9;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking-form input,
+.booking-form button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #6272a4;
+    background-color: #44475a;
+    color: #f8f8f2;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+.booking-form input:focus {
+    outline: none;
+    border-color: #bd93f9;
+}
+
+.booking-form button {
+    background-color: #bd93f9;
+    color: #282a36;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.booking-form button:hover {
+    background-color: #50fa7b;
+    border-color: #50fa7b;
+    color: #282a36;
+}
+
+/* Media Queries */
 @media (max-width: 875px) {
 
     .logo {
@@ -216,5 +369,14 @@ button:hover {
         height: 100px;
         margin-right: 0;
         margin-bottom: 15px;
+    }
+
+    .property-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property-card {
+        width: 90%;
     }
 }
