@@ -47,7 +47,85 @@
 
   </section>
   -->
+
+<section class="title">
+  <h2>Properties for Sale</h2>
+  <p>Find your dream house today.</p>
+</section>
+
+<!-- PROPERTY LISTINGS -->
+<section class="property-list">
+
+  <!-- Property 1 (Yellow House - Jesse) -->
+  <article class="property-card" onclick="openModal('yellow-house')">
+    <img src="https://via.placeholder.com/300x200/f1fa8c/282a36?text=Yellow+House" alt="Yellow House Thumbnail">
+    <div class="property-info">
+      <h3>Sunshine Way 12</h3>
+      <p><strong>Size:</strong> 145 m²</p>
+      <p><strong>Price:</strong> $350,000</p>
+    </div>
+  </article>
+
+  <!-- Property 2 (Green House - Cassandra) -->
+  <article class="property-card" onclick="openModal('green-house')">
+    <img src="https://via.placeholder.com/300x200/50fa7b/282a36?text=Green+House" alt="Green House Thumbnail">
+    <div class="property-info">
+      <h3>Forest Lane 8</h3>
+      <p><strong>Size:</strong> 180 m²</p>
+      <p><strong>Price:</strong> $420,000</p>
+    </div>
+  </article>
+
+</section>
+
 </main>
+
+<!-- DETAILED VIEW MODAL -->
+<div id="details-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+
+    <h2 id="modal-title">Property Details</h2>
+    <p id="modal-address">Address goes here</p>
+
+    <div id="modal-body">
+      <p id="modal-description">Detailed description of the property will appear here...</p>
+
+      <!-- Map Embed -->
+      <div class="map-container">
+        <h3>Location</h3>
+        <iframe
+                id="modal-map"
+                width="100%"
+                height="250"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=11.3,55.3,11.4,55.4&layer=mapnik">
+        </iframe>
+      </div>
+
+      <!-- VIEWING REQUEST FORM -->
+      <section class="booking-form">
+        <h3>Request a Viewing</h3>
+        <form id="viewing-form" action="mailto:contact@aliceandbob.com" method="post" enctype="text/plain">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="Full Name" required>
+
+          <label for="email">Email / Phone:</label>
+          <input type="text" id="email" name="Contact Info" required>
+
+          <label for="viewing-time">Preferred Viewing Time:</label>
+          <input type="datetime-local" id="viewing-time" name="Preferred Time" required>
+
+          <button type="submit">Send Viewing Request</button>
+        </form>
+      </section>
+    </div>
+  </div>
+</div>
+
 <!-- TODO add footer
 <footer class="technologies">
   <img src="" alt="">
@@ -57,5 +135,6 @@
 <!-- Javascript code
 <script type="module" src="/src/main.js"></script>
 -->
+<script src="script.js"></script>
 </body>
 </html>
