@@ -1,0 +1,83 @@
+/* ==========================================
+   1. CORE BASICS & LINKS
+   ========================================== */
+
+/*todo Cool Dracula inspired stylesheet in CSS, re-use this for personal website later*/
+a {
+    color: #50fa7b; /* All links colored green */
+}
+
+.wrapper, .links a {
+    color: #bd93f9;
+}
+
+/* Link States */
+a:link { /* Unvisited links */
+    color: #6272a4;
+}
+a:visited {
+    color: #44475a;
+}
+a:hover {
+    color: #50fa7b;
+}
+a:active {
+    color: #bd93f9;
+}
+
+/* Centralized Global Body Configuration */
+body {
+    /* Fixed path with root slash to pull safely from your main folder zone */
+    cursor: auto;
+    color: #6272a4;
+    font-family: Verdana, sans-serif;
+    text-align: center; /* aligns text to center. key point to keep in mind since you don't wanna try to do that in html*/
+
+    /* Central column structure alignment blueprints */
+    width: 600px;     /* Make the body 600 pixels wide */
+    margin: 0 auto;
+    /* margin: top/bottom auto (auto centers it) */
+    /* This centers the whole page horizontally */
+    padding: 0 20px 20px 20px;
+    /* padding: top right bottom left */
+    /* Top: 0, Right: 20px, Bottom: 20px, Left: 20px */
+    /* Adds space inside the edges */
+
+
+    background-color: #282a36;
+
+    /* Forces background tracking trail coverage over the whole view monitor */
+    min-height: 100vh;
+    /* vh = viewport height. 100vh = full screen height */
+    /* Makes page at least as tall as your screen */
+}
+
+/* Centralized Headings */
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+}
+
+/* Paragraphs */
+p {
+    margin: 15px 0;
+}
+
+/* Lists */
+ul, ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Highlight Text Color selection */
+::selection {
+    background: #ff79c6;
+}
