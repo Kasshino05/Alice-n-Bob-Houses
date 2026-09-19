@@ -27,6 +27,8 @@ You have to work using Git
 
 The group must submit their final project.
 
+### Submission
+
 You have to hand in files.
 One handover for the group.
 
