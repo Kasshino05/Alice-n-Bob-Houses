@@ -1,7 +1,8 @@
-/* NOTE TO CASSANDRA: feel free to change anything you want in this stylesheet to whatever you feel is right. i default added dark theme cuz my eyes get sore when websites have light theme, and made the font more dyslexia friendly, but change it if it bothers you :)
-*/
+/* NOTE TO CASSANDRA: feel free to change anything you want in this stylesheet to whatever you feel is right.
+i default added dark theme cuz my eyes get sore when websites have light theme,
+and made the font more dyslexia friendly, but change it if it bothers you :) */
 
-:root {
+:root { /* think of this as the website's meta but in the context of styling, these become the defaults */
     font-family: Verdana, Geneva, sans-serif;
     font-weight: 300;
     color: #f8f8f2;
@@ -9,6 +10,7 @@
     text-align: center;
 }
 
+/* text selection/highlight */
 ::selection {
     background: #ff79c6;
     color: #282a36;
@@ -35,7 +37,7 @@ a:active {
     color: #50fa7b;
 }
 
-body {
+body { /* NOTE change to your liking if you want */
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -44,15 +46,17 @@ body {
     min-height: 100vh;
     align-items: center;
 
-    /* TODO either remove or add new background. Otherwise, this is residual code from template */
+    /* TODO either remove or add new background. Otherwise, this is residual code from template, can be deleted if you find no use for it */
     /* background-image: url("background.svg"); */
     background-repeat: no-repeat;
     background-size: contain;
+    /* NOTE keep these below intact */
     background-color: #282a36;
     color: #f8f8f2;
     font-family: Verdana, Geneva, sans-serif;
 }
 
+/* NOTE applies to all, header text, paragraphs, lists, etc. Feel free to tweak these styles if needed */
 h1 {
     font-size: 29px;
     line-height: 39px;
@@ -71,7 +75,7 @@ ul, ol {
     padding-left: 20px;
 }
 
-.title {
+.title { /* NOTE best to not touch this */
     margin-bottom: 40px;
 }
 
@@ -79,7 +83,7 @@ ul, ol {
     max-width: 1280px;
 }
 
-.logo {
+.logo { /* NOTE potentially residual code, idk lol */
     margin-top: 45px;
     margin-left: 20%;
     align-self: flex-start;
@@ -97,7 +101,7 @@ button {
     color: #f8f8f2;
 }
 
-button:hover {
+button:hover { /* NOTE fine as is, but tweak it if so desired */
     background-image: radial-gradient(
             farthest-corner at 77% 83%,
             rgba(255, 121, 198, 0.4) 2%,
@@ -131,12 +135,12 @@ button:hover {
     margin: 20px 0;
 }
 
-.property-card {
+.property-card { /* NOTE change these if you desire to */
     background-color: #44475a;
     border: 1px solid #6272a4;
     border-radius: 12px;
     width: 280px;
-    cursor: pointer;
+    cursor: pointer; /* NOTE leave this one alone */
     overflow: hidden;
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
