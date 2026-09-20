@@ -44,7 +44,8 @@ body {
     min-height: 100vh;
     align-items: center;
 
-    background-image: url("background.svg");
+    /* TODO either remove or add new background. Otherwise, this is residual code from template */
+    /* background-image: url("background.svg"); */
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #282a36;
