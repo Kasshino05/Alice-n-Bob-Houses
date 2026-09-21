@@ -52,7 +52,7 @@ const properties = {
       'A peaceful green estate surrounded by nature. Features 4 bedrooms, timber finishes, and proximity to local schools.',
     size: '180 m²',
     price: '$420,000',
-    mapBbox: '12.5500,55.6700,12.5900,55.6900'
+    mapBbox: '11.3600,54.6800,11.4200,54.7100'
   },
 };
 
