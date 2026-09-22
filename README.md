@@ -59,5 +59,6 @@ REMEMBER: Git small, Git often - Git commit messages are part of your drop-off.
 
 
 ### Credits
-- Jesse - Yellow (GUL) house
-- Cassandra - Green house
+- Jesse 
+- Cassandra @Kasshino05CassNat
+- Oliver @Oliv903d
