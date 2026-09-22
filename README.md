@@ -29,14 +29,12 @@ Before coding begins, a representative from Alice & Bob Houses must approve a mo
 ### Delivery
 - A fully functional website that meets all requirements in the specifications written by the teacher Rasmus.
 
-### Presentation
+## Presentation
 The presentation takes place in front of the class.
 The presentation should be between 10-15 minutes.
 Please make a speech paper and possibly Powerpoint.
 Those who will be listening to the presentation are welcome to write down questions and ask them after or during the presentation.
 
-
-## Misc.
     What is the case?
     What are the technical requirements for the case? (Should a specific technology be used, must/may be used framework, etc.)
     What are the functionality requirements for the case? (What features are “a must” for the customer)
